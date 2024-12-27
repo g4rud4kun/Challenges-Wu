@@ -140,7 +140,11 @@ Afterwards, Dr4k3n sent 3 base64-encoded images, which were never fully transmit
 
 Author's Note: All of this was done to create a realistic scenario where Dr4k3n was sending text messages related to the hideouts. The images were intentionally not sent completely over the network. SIP has limitations with file transfer features, and I have limited knowledge as of now. This was the rabbit hole, so I was assisting whoever reached these steps. Later on, I released hints for these to save your time.
 
-Following up on the SIP Message Body Packets, I found 3 SIP Message packets (no. 25855, 25886, 29862) which were very different from any other packets. While checking the message body section, all 3 had XML tags, with 2 of the packets having ```Content-Type: application/im-iscomposing+xml\r\n``` and another having ```Content-Type: application/vnd.gsma.rcs-ft-http+xml\r\n```. There was a huge volume of TCP Protocols ranging from packet 25855 to 29862, which suggests something was shared between Dr4k3n and X1E, but it was encrypted due to TCP/TLS, as you can see in the 29862 Packet Message Body shown below.
+Following up on the SIP Message Body Packets, I found 3 SIP Message packets (no. 25855, 25886, 29862) which were very different from any other packets.
+
+![3 SIP Message Packets](./assets/3%20Diff%20SIP%20Message%20Packets.png)
+
+ While checking the message body section, all 3 had XML tags, with 2 of the packets having ```Content-Type: application/im-iscomposing+xml\r\n``` and another having ```Content-Type: application/vnd.gsma.rcs-ft-http+xml\r\n```. There was a huge volume of TCP Protocols ranging from packet 25855 to 29862, which suggests something was shared between Dr4k3n and X1E, but it was encrypted due to TCP/TLS, as you can see in the 29862 Packet Message Body shown below.
 
 ![Packet 29862](./assets/Packet_File_Transfer.png)
 
