@@ -103,6 +103,7 @@ indicated that X1E called Dr4k3n. RTP packets with H.264 & Opus codecs confirmed
 Got this [h264extractor](https://github.com/volvet/h264extractor) plugin, I extracted a video file (Video_call.264). After converting it to .mp4, here's the result:
 
 <video width="800" height="320" controls> <source src="./assets/Video_call.mp4" type="video/mp4"></video>
+![Video Call](./assets/Video_call.mp4)
 
 This is the clear video by the CTF Participant `d33znu75 (Discord)` Another guy after RJCyber who was leading, Respect Man.
 
